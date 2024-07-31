@@ -1,0 +1,1 @@
+export type TCategory = 'SELLING' | 'RENT' | 'NEWS' | 'COMMUNITY' | "FORMATION"
