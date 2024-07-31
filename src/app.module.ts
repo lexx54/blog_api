@@ -23,17 +23,10 @@ import { BlogModule } from './blog/blog.module';
 import { BlogEntity } from './blog/blog.entity';
 import { JournalEntity } from './journal/journal.entity';
 import { JournalModule } from './journal/journal.module';
-// require('dotenv').config();
 import 'dotenv/config';
-// import { config } from 'dotenv';
 
-// config();
-console.log('======= ', process.env.DB_PORT);
 @Module({
   imports: [
-    // ServeStaticModule.forRoot({
-    //   rootPath: join(__dirname, '../../', 'front/dist'),
-    // }),
     ConfigModule.forRoot({
       isGlobal: true, // Hace que las variables de entorno estén disponibles globalmente
     }),
